@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Friend Survey</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+  <h1>SURVEY QUESTIONS</h1>
+  <hr class="my-4">
+  <h3>ABOUT YOU</h3>
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name (required)</label>
+    <input type="type" class="form-control" id="name" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Link to photo image (required)</label>
+    <input type="text" class="form-control" id="link">
+  </div>
+</form>
+  <hr class="my-4">
+  <h3>Question 1</h3>
+    <p>How much do you like video games?</p>
+    <select class="btn btn-info mb-5" id="question1">
+      <option value="" disabled selected>Please select an answer...</option>
+			<option value="1">1 (None)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (A lot)</option>
+    </select>
+  <h3>Question 2</h3>
+    <p>How much do you like exercising?</p>
+    <select class="btn btn-info mb-5" id="question2">
+      <option value="" disabled selected>Please select an answer...</option>
+      <option value="1">1 (None)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (A lot)</option>
+    </select>
+  <h3>Question 3</h3>
+  <p>How much do you like watching movies?</p>
+  <select class="btn btn-info mb-5" id="question3">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (None)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (A lot)</option>
+  </select>
+  <h3>Question 4</h3>
+  <p>How much do you like alcohol?</p>
+  <select class="btn btn-info mb-5" id="question4">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (None)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (A lot)</option>
+  </select>
+  <h3>Question 5</h3>
+  <p>How much do you like anime?</p>
+  <select class="btn btn-info mb-5" id="question5">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (None)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (A lot)</option>
+  </select>
+  <h3>Question 6</h3>
+  <p>Do you like to do activties spontaneously?</p>
+  <select class="btn btn-info mb-5" id="question6">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (strongly agree)</option>
+  </select>
+  <h3>Question 7</h3>
+  <p>How much do you like roller coasters?</p>
+  <select class="btn btn-info mb-5" id="question7">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (None)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (A lot)</option>
+  </select>
+  <h3>Question 8</h3>
+  <p>How much do you like to draw?</p>
+  <select class="btn btn-info mb-5" id="question8">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (None)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (A lot)</option>
+  </select>
+  <h3>Question 9</h3>
+  <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+  <select class="btn btn-info mb-5" id="question9">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (strongly agree)</option>
+  </select>
+  <h3>Question 10</h3>
+  <p>People can rarely upset you.</p>
+  <select class="btn btn-info mb-5" id="question10">
+    <option value="" disabled selected>Please select an answer...</option>
+    <option value="1">1 (disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (strongly agree)</option>
+  </select>
+  <button type="button" class="btn btn-danger btn-lg btn-block" id="submit">Submit</button>
+  <hr class="my-4">
+  <div>
+    <p class="float-left ml-3 mb-5"><a href="/api/friends" class="text-primary">API Friends list</a></p>
+    <p class="float-left ml-3 mr-3">|</p>
+    <p class="float-left"><a href="https://github.com/armitroncee/FriendFinder" class="text-primary">Git Hub Repo</a></p>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modalImage">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+  $("#submit").on("click", function(event){
+    event.preventDefault();
+
+    var newFriend = {
+      name: $("#name").val().trim(),
+      link: $("#link").val().trim(),
+      scores: [
+      $("#question1").val(),
+      $("#question2").val(),
+      $("#question3").val(),
+      $("#question4").val(),
+      $("#question5").val(),
+      $("#question6").val(),
+      $("#question7").val(),
+      $("#question8").val(),
+      $("#question9").val(),
+      $("#question10").val()
+      ]
+    };
+
+    console.log(newFriend)
+
+
+    $.post("/api/friends", newFriend)
+    .done(function(data) {
+      console.log(data);
+      $('#modalTitle').html(data.matchName)
+      $('#modalImage').html("<img src=" + data.matchImage + " alt='Your friend' style='width:400px;height:400px;'>")
+      $('#myModal').modal('show')
+
+    });
+  });
+
+
+</script>
+</body>
+</html>
